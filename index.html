@@ -2,122 +2,141 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Little Taco Shop" />
     <meta
       name="description"
-      content="This Page is the Official Page of Little Taco Shop"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      content="This Page is the Official Page of Little Taco Shop" />
     <title>LTS</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="js/time.js" defer></script>
+    <script src="js/theme.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Welcome to The Little Taco Shop</h1>
-      <nav aria-label="primary-navigation">
-        <ul>
-          <li><a href="#About LTS">About <abbr title="Little Taco Shop">LTS</abbr></a></li>
-          <li><a href="#Our Menu">Our Menu</a></li>
-          <li><a href="hours.html">Store Hours</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+    <header class="header">
+      <h1 class="header__h1">Little Taco Shop</h1>
+      <button id="theme-switch" class="theme-switch">
+        <svg
+          class="theme-switch__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3">
+          <path
+            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        </svg>
+        <svg
+          class="theme-switch__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3">
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        </svg>
+      </button>
+      <nav class="header__nav" aria-label="primary-navigation">
+        <ul class="header__ul">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-      <figure>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero__h2">Bienvenidos!</h2>
+      <figure class="hero__figure">
         <img
-          src="/img/tacos_and_drink_400x267.png"
+          src="/img/tacos_and_drink_1000x667.png"
           alt="Tacos and a Drink"
           title="Fresh and Tasty !"
-          width="400"
-          height="267"
-        />
-        <figcaption>Tacos and a Drink</figcaption>
+          width="1000"
+          height="667" />
+        <figcaption class="offscreen">Tacos and a Drink</figcaption>
       </figure>
-    </header>
+    </section>
+
     <hr />
-    <main>
-    <article id="About LTS">
-      <h2>About <abbr title="Little Taco Shop">LTS</abbr></h2>
-      <p>
-        <abbr title="Little Taco Shop">LTS</abbr> was founded in
-        <time datetime="2022">2022</time> . Our Shop was built from a <strong>love of
-        tacos</strong> 🌮🌮🌮. We hope our shop adds a unique and intresting place to our
-        little town.
-      </p>
-      <aside>
-        <h3>Taco Trivia</h3>
-        <details>
-          <summary>When did tacos first appear in the United States?</summary>
-          <p>
-            Jeffrey M. Pilcher, taco historian and professor of history at the
-            University of Minnesota, says the earliest mention of tacos in the
-            United States are in a newspaper from
-            <time datetime="1905">1905</time>. <br />
-            (Source: <cite>
-            <a
-              href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/
-                                "
-              target="_main"
-              >SmithSonian Magazine</a
-            ></cite>
-            )
-          </p>
-        </details>
-      </aside>
-    </article>
-    <hr />
-    <article id="Our Menu">
-      <h2>Our Menu</h2>
-      <table>
-        <caption>
-          Our Tacos
-        </caption>
-        <thead>
-          <tr>
-            <th>tacos</th>
-            <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>  
-          <tr>
-            <th scope="row" rowspan="3">Crunchy</td>
-            <td >1</td>
-            <td>$1.50</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>$2.50</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>$3.25</td>
-          </tr>
-          <tr>
-            <th scope="row" rowspan="3">Soft</td>
-            <td>1</td>
-            <td>$2.00</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>$3.50</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>$4.50</td>
-          </tr>
-        </tbody>
-        <tfoot>
-            <td colspan="3">Chips &amp; Salsa $2</td>
-        </tfoot>
-      </table>
-    </article>
+
+    <main class="main">
+      <article id="menu" class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
+
+        <div class="menu__infinitescroll">
+          <div class="item item1">🌮</div>
+          <div class="item item2">🥑</div>
+          <div class="item item3">🌯</div>
+          <div class="item item4">🍹</div>
+          <div class="item item5">🌶️</div>
+          <div class="item item6">🫔</div>
+        </div>
+
+        <table class="menu__table">
+          <caption class="offscreen">
+            Our Tacos
+          </caption>
+          <thead>
+            <tr>
+              <th class="menu__header" scope="col">Tacos</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="menu__item menu__cr" scope="row" rowspan="3">
+                Crunchy
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$1.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$2.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$3.25</td>
+            </tr>
+            <tr>
+              <th class="menu__item menu__sf" scope="row" rowspan="3">Soft</th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$2.00</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$3.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$4.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="menu__item menu__cs" colspan="3">
+                Chips &amp; Salsa $2
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
     </main>
-    <br>
-    <footer>    
-    <p><a href="#">Back To Top</a></p>
-    <hr>
-    <p>Copyright &copy; The Little Taco Shop</p>
+
+    <hr />
+
+    <p class="back_to_top"><a href="#">Back To Top</a></p>
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Little Taco Shop" />
+    <meta
+      name="description"
+      content="This Page is the Official Page of Little Taco Shop" />
+    <title>About LTS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="js/time.js" defer></script>
+    <script src="js/theme.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">About Us</h1>
+      <nav class="header__nav" aria-label="primary-navigation">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-switch" class="theme-switch">
+        <svg
+          class="theme-switch__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3">
+          <path
+            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        </svg>
+        <svg
+          class="theme-switch__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3">
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        </svg>
+      </button>
+    </header>
+
+    <section class="hero">
+      <figure>
+        <img
+          src="img/tacos_delicioso_1000x667.png"
+          alt="Tacos Delicioso"
+          title="Tacos Delicioso!"
+          width="1000"
+          height="667" />
+        <figcaption class="offscreen">Try these Delicious Tacos</figcaption>
+      </figure>
+    </section>
+
+    <hr />
+
+    <main class="main">
+      <article id="about" class="main__article about">
+        <h2>About <abbr title="Little Taco Shop">LTS</abbr></h2>
+        <p>
+          <abbr title="Little Taco Shop">LTS</abbr> was founded in
+          <time datetime="2022">2022</time> . Our Shop was built from a
+          <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a unique
+          and intresting place to our little town.
+        </p>
+        <aside class="about__trivia">
+          <h3>Taco Trivia</h3>
+          <details>
+            <summary>When did tacos first appear in the United States?</summary>
+            <p class="about__trivia-answer">
+              Jeffrey M. Pilcher, taco historian and professor of history at the
+              University of Minnesota, says the earliest mention of tacos in the
+              United States are in a newspaper from
+              <time datetime="1905">1905</time>. <br />
+              (Source:
+              <cite>
+                <a
+                  href="http://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >SmithSonian Magazine</a
+                ></cite
+              >
+              )
+            </p>
+          </details>
+        </aside>
+      </article>
+      <article class="about__cardsection">
+        <section class="card">
+          <figure class="card__figcaption">
+            <img
+              class="card__img"
+              src="img/first.jpeg"
+              alt="Interior View"
+              width="225"
+              height="225" />
+            <figcaption>Interior</figcaption>
+          </figure>
+          <p>
+            Bright papel picado sways above cozy wooden tables, bathed in the
+            warm glow of string lights.
+          </p>
+        </section>
+        <section class="card">
+          <figure class="card__figcaption">
+            <img
+              class="card__img"
+              src="img/second.jpg"
+              alt="Entrance View"
+              width="225"
+              height="225" />
+            <figcaption>Entrance</figcaption>
+          </figure>
+          <p>
+            A weathered wooden board with bold, hand-painted letters—LTS—marks
+            the taco shop's welcoming entrance.
+          </p>
+        </section>
+        <section class="card">
+          <figure class="card__figcaption">
+            <img
+              class="card__img"
+              src="img/third.png"
+              alt="Map View"
+              width="225"
+              height="225" />
+            <figcaption>Map View</figcaption>
+          </figure>
+          <p>
+            Tucked in a quiet corner of the map, the taco shop rests at the
+            heart of a small town where everyone knows its name.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+</html>

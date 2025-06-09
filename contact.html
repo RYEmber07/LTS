@@ -6,78 +6,64 @@
     <meta name="author" content="Little Taco Shop" />
     <meta
       name="description"
-      content="This Page is about You Reaching out to Us"
-    />
-    <link rel="stylesheet" href="/style.css" />
+      content="This Page is about You Reaching out to Us" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <script src="js/time.js" defer></script>
+    <script src="js/theme.js" defer></script>
     <title>Contact Us</title>
   </head>
   <body>
-    <header>
-      <h1>Contact Us</h1>
-      <nav aria-label="primary-navigation">
-        <ul>
+    <header class="header">
+      <h1 class="header__h1">Contact Us</h1>
+      <nav class="header__nav" aria-label="primary-navigation">
+        <ul class="header__ul">
           <li><a href="/">Home</a></li>
-          <li><a href="/#About LTS">About LTS</a></li>
-          <li><a href="/#Our Menu">Our Menu</a></li>
-          <li><a href="/hours.html">Store Hours</a></li>
+          <li><a href="/#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
+      <button id="theme-switch" class="theme-switch">
+        <svg
+          class="theme-switch__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3">
+          <path
+            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        </svg>
+        <svg
+          class="theme-switch__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3">
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        </svg>
+      </button>
+    </header>
+
+    <section class="hero">
       <figure>
         <img
-          src="img/tacos_close_up_400x260.png"
+          src="img/tacos_close_up_1000x649.png"
           alt="Little Taco Shop Tacos"
           title="Closeup View Of Our Tacos"
-          width="400"
-          height="260"
-        />
-        <figcaption>Little Taco Shop Tacos</figcaption>
+          width="1000"
+          height="649" />
+        <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
       </figure>
-    </header>
-    <main>
-      <section>
-        <h2>Our Contact Form</h2>
+    </section>
 
-        <form action="https://httpbin.org/get" method="get">
-          <fieldset>
-            <legend>Send Us A Message</legend>
-            <p>
-              <label for="Name">Name:</label>
-              <input
-                type="text"
-                name="Name"
-                id="Name"
-                placeholder="your name"
-                required
-              />
-            </p>
-            <p>
-              <label for="Email">Email:</label>
-              <input
-                type="email"
-                name="Email"
-                id="Email"
-                placeholder="your email"
-                required
-              />
-            </p>
-            <p>
-              <label for="Your Message">Your Message:</label>
-              <br />
-              <textarea
-                name="Your Message"
-                id="Your Message"
-                cols="30"
-                rows="10"
-                placeholder="Type your message here"
-              ></textarea>
-            </p>
-          </fieldset>
-          <button type="submit">Send</button>
-          <button type="reset">Reset</button>
-        </form>
-      </section>
-      <section>
+    <hr />
+
+    <main class="main">
+      <article class="main__article">
         <h2>Our Location</h2>
         <address>
           555 Taco Temptation Lane , Suite T <br />
@@ -85,14 +71,67 @@
           <br />
           Phone: <a href="tel:+555-555-5555">555-555-5555</a>
         </address>
-      </section>
+      </article>
+
+      <hr />
+
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="contact__form">
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us A Message</legend>
+            <p class="contact__p">
+              <label class="contact__label" for="Name">Name:</label>
+              <input
+                class="contact__input"
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="your name"
+                required />
+            </p>
+            <p class="contact__p">
+              <label class="contact__label" for="Email">Email:</label>
+              <input
+                class="contact__input"
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="your email"
+                required />
+            </p>
+            <p class="contact__p">
+              <label class="contact__label" for="Your-Message"
+                >Your Message:</label
+              >
+              <br />
+              <textarea
+                class="contact__textarea"
+                name="Your-Message"
+                id="Your-Message"
+                cols="30"
+                rows="10"
+                placeholder="Type your message here"></textarea>
+            </p>
+          </fieldset>
+          <button class="contact__button" type="submit">Send</button>
+          <button class="contact__button" type="reset">Reset</button>
+        </form>
+      </article>
     </main>
-    <footer>
-      <br />
-      <a href="#">Back To Top</a>
-      <hr />
-      <hr />
-      <p>Copyright &copy; The Little Taco Shop</p>
+
+    <hr />
+
+    <p class="back_to_top"><a href="#">Back To Top</a></p>
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
     </footer>
   </body>
 </html>
